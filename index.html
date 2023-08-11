@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d36bdba97.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- whole page -->
+         <div  id="Home" class="portfolio-contents">
+              <!-- nav page -->
+  
+              <!-- sidebar page -->
+              <aside class="sidebar" data-sidebar>
+                      <div class="sidebar-info">
+                          <button class="blog-hamburger">
+                              <span class="hamburger-line line-a"></span>
+                              <span class="hamburger-line line-b"></span>
+                              <span class="hamburger-line line-c"></span>
+                          </button>
+                          <i class="fa-solid user-icon fa-user"></i>
+  
+                          <nav class="nav-list-items">
+                              <ul class="navbar-list">
+                          
+                                  <li class="navbar-item">
+                                      <a
+                                      href="#Home"
+                                      target="_self"
+                                      class="navbar-link active"
+                                      data-nav-link
+                                      >Home</a
+                                      >
+          
+                                  <li class="navbar-item"> 
+                                      <a
+                                      href="#resume"
+                                      target="_self"
+                                      class="navbar-link"
+                                      data-nav-link
+                                      >Resume</a
+                                      >
+                                  </li>
+          
+                                  <li class="navbar-item">
+                                      <a
+                                      href="#portfolio"
+                                      target="_self"
+                                      class="navbar-link"
+                                      data-nav-link
+                                      >Portfolio</a
+                                      >
+                                  </li>
+          
+                                  <li class="navbar-item">
+                                      <a
+                                      href="#contact-page"
+                                      target="_self"
+                                      class="navbar-link"
+                                      data-nav-link
+                                      >Contact</a
+                                      >
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+  
+                      <div class="sidebar-info_more">
+                          <div>
+                              
+                              <ul class="contacts-list">
+                              
+                                  <li class="profile-item">
+                                          <div class="profil-pic">
+                                              <img
+                                              src="/img/profile.jpg"
+                                              alt="Anileleye Awwal"
+                                              class="profile-display"
+                                              width="80"
+                                              />
+                                          </div>
+                                          <button class="profile-cancel">
+                                              <i class="icon fa-solid cancel-x fa-circle-xmark"></i>
+                                          </button>
+                                  </li>
+                                  <h3>ANILELEYE AWWAL</h3>
+                                  <p>Web developer</p>
+                                  <div class="separator"></div>
+                                  <li class="contact-item">
+                                      <div class="icon-box">
+                                          <i class="icon fa-regular fa-envelope"></i>
+                                      </div>
+      
+                                      <div class="contact-info">
+                                          <p class="contact-title">Email</p>
+      
+                                          <a href="https://mailto:aanileleye@gmail.com" class="contact-link" target="_blank"
+                                          >aanileleye@gmail.com</a
+                                          >
+                                      </div>
+                                  </li>
+      
+                                  <li class="contact-item">
+                                      <div class="icon-box">
+                                          <i class="icon fa-solid fa-phone"></i>
+                                      </div>
+      
+                                      <div class="contact-info">
+                                          <p class="contact-title">Phone</p>
+      
+                                          <a href="tel:+2348159124775" class="contact-link"
+                                          >+(234) 815-912-4775</a
+                                          >
+                                      </div>
+                                  </li>
+      
+                                  <li class="contact-item">
+                                      <div class="icon-box">
+                                          <i class="icon fa-solid fa-calendar-days"></i>
+                                      </div>
+      
+                                      <div class="contact-info">
+                                          <p class="contact-title">Birthday</p>
+      
+                                          <time datetime="1999-08-08">August 8, 1999</time>
+                                      </div>
+                                  </li>
+      
+                                  <li class="contact-item">
+                                      <div class="icon-box">
+                                          <i class="icon fa-solid fa-location-dot"></i>
+                                      </div>
+      
+                                      <div class="contact-info">
+                                          <p class="contact-title">Location</p>
+      
+                                          <address>Lagos, Nigeria</address>
+                                      </div>
+                                  </li>
+                              </ul>
+  
+                              <div class="separator"></div>
+      
+                              <ul class="social-list">
+                                  <li class="social-item">
+                                  <a href="https://github.com/mohawwal/" target="_blank" class="social-link">
+                                      <i class="icon fa-brands fa-github"></i>
+                                  </a>
+                                  </li>
+      
+                                  <li class="social-item">
+                                  <a href="https://twitter.com/mohawwal/" class="social-link" target="_blank">
+                                      <i class="icon fa-brands fa-twitter"></i>
+                                  </a>
+                                  </li>
+      
+                                  <li class="social-item">
+                                  <a href="https://www.instagram.com/_hayjhay/" target="_blank" class="social-link">
+                                      <i class="icon fa-brands fa-instagram"></i>
+                                  </a>
+              
+                                  </li>
+                              </ul>
+                          
+                          </div>
+  
+  
+                          <ul class="mode-section">
+                              <li class="sun-mode">
+                                  <a href="#lightMode" class="mode sun">
+                                      <i class="fa-solid fa-sun icon sun-icon"></i>
+                                      <!-- <span class="mode-text text">Light Mode</span> -->
+                                  </a>
+                              </li>
+                              <li class="moon-mode">
+                                  <a href="#darkMode" class="mode moon">
+                                      <i class="fa-solid icon switch-icon fa-circle-half-stroke"></i>
+                                      <!-- <i class="fa-solid fa-moon icon moon-icon"></i> -->
+                                      <span class="mode-text text">Switch Mode</span>
+                                  </a>
+                              </li>
+                          </ul>  
+                      </div>
+                  </aside>
+              
+  
+              <!-- main page -->
+              <div class="section-articles">
+                  <article class="about active page" data-page="about">
+                      <header>
+                      <h2 class="h2 article-title">About me</h2>
+                      </header>
+  
+                      <!-- about me section -->
+                      <section class="about-text">
+                      <p>
+                          I am a passionate frontend developer with expertise in HTML, CSS, React, and JavaScript. Driven by a constant desire to learn, I am currently expanding my skills in various aspects of software engineering.
+                      </p>
+  
+                      <p>
+                          A hardworking and focused individual, I thrive in collaborative team environments, where I can contribute my creativity and dedication to crafting exceptional web experiences. My goal is to bring innovative ideas to life and create user-friendly digital solutions that leave a lasting impact.
+                      </p>
+                      </section>
+  
+                      <!-- service section -->
+                      <section class="service">
+                      <h3 class="h3 service-title">Expertise</h3>
+  
+                      <ul class="service-list">
+                          <li class="service-item">
+                          <div class="service-icon-box">
+                              <img
+                              src="/img/icon-dev.svg"
+                              alt="Web developer icon"
+                              width="40"
+                              />
+                          </div>
+  
+                          <div class="service-content-box">
+                              <h4 class="h4 service-item-title">Web Development (HTML/CSS/JS)</h4>
+  
+                              <p class="service-item-text">
+                                  Proficient in building responsive and interactive web applications using modern web technologies, ensuring seamless user experiences and cross-browser compatibility.
+                              </p>
+                          </div>
+                          </li>
+  
+                          <li class="service-item">
+                          <div class="service-icon-box">
+                              <img
+                              src="/img/icon-design.svg
+                                          "
+                              alt="design icon"
+                              width="40"
+                              />
+                          </div>
+  
+                          <div class="service-content-box">
+                              <h4 class="h4 service-item-title">React.js Development</h4>
+  
+                              <p class="service-item-text">
+                                  Building dynamic and scalable front-end applications with React.js's component-based architecture.
+                              </p>
+                          </div>
+                          </li>
+  
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                  <img
+                                  src="/img/icon-app.svg"
+                                  alt="Web development icon"
+                                  width="40"
+                                  />
+                              </div>
+      
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Mobile App with Firebase</h4>
+      
+                                  <p class="service-item-text">
+                                      Developed a mobile application using HTML, CSS, and JavaScript, integrated with Firebase backend for real-time data synchronization, authentication, and cloud storage. Ensured seamless user experiences and secure data handling.
+                                  </p>
+                              </div>
+                              </li>
+  
+                          <li class="service-item">
+                          <div class="service-icon-box">
+                              <img
+                              src="/img/icon-dev.svg"
+                              alt="Web development icon"
+                              width="40"
+                              />
+                          </div>
+  
+                          <div class="service-content-box">
+                              <h4 class="h4 service-item-title">Responsive Web Design</h4>
+  
+                              <p class="service-item-text">
+                                  Proficient in creating responsive layouts and mobile-friendly interfaces, providing consistent user experiences across various devices and screen sizes.
+                              </p>
+                          </div>
+                          </li>
+  
+                          <li class="service-item">
+                          <div class="service-icon-box">
+                              <img
+                              src="/img/icon-design.svg
+                                          "
+                              alt="design icon"
+                              width="40"
+                              />
+                          </div>
+  
+                          <div class="service-content-box">
+                              <h4 class="h4 service-item-title">Git Version Control</h4>
+  
+                              <p class="service-item-text">
+                                  Managing code efficiently with Git for smooth collaboration.
+                              </p>
+                          </div>
+                          </li>
+  
+                          <li class="service-item">
+                          <div class="service-icon-box">
+                              <img
+                              src="/img/icon-dev.svg"
+                              alt="Web development icon"
+                              width="40"
+                              />
+                          </div>
+  
+                          <div class="service-content-box">
+                              <h4 class="h4 service-item-title">RESTful API Integration</h4>
+  
+                              <p class="service-item-text">
+                                  Connecting front-end apps to RESTful APIs for data handling.
+                              </p>
+                          </div>
+                          </li>
+                      </ul>
+                      </section>
+  
+                      <!-- work experience -->
+  
+                      <section class="testimonials">
+                      <h3 class="h3 testimonials-title">Work experience</h3>
+  
+                      <ul class="testimonials-list has-scrollbar">
+                          <li class="testimonials-item">
+                              <div class="content-card" data-testimonials-item>
+                                  <figure class="testimonials-avatar-box">
+                                      <img
+                                          src="/img/dangote.png"
+                                          alt="Dangote logo"
+                                          width="60"
+                                          class="company-icon"
+                                          data-testimonials-avatar
+                                      />
+                                  </figure>
+  
+                                  <h4
+                                  class="h4 testimonials-item-title"
+                                  data-testimonials-title
+                                  >
+                                  Intern at Dangote Flour Mill
+                                  </h4>
+  
+                                  <div class="testimonials-text" data-testimonials-text>
+                                      <p>
+                                          Gained valuable experience in the process mill department, mill lab, and control room. Demonstrated dedication and hard work, receiving the "Best Floor Award" in December for outstanding performance.
+                                      </p>
+                                  </div>
+                              </div>
+                          </li>
+  
+                          <li class="testimonials-item">
+                          <div class="content-card" data-testimonials-item>
+                              <figure class="testimonials-avatar-box">
+                              <img
+                                  src="/img/merit.png"
+                                  alt="merita bakery"
+                                  width="60"
+                                  class="company-icon"
+                                  data-testimonials-avatar
+                              />
+                              </figure>
+  
+                              <h4
+                              class="h4 testimonials-item-title"
+                              data-testimonials-title
+                              >
+                              Sales and Bakery Management
+                              </h4>
+  
+                              <div class="testimonials-text" data-testimonials-text>
+                              <p>
+                                  Proven track record as a successful salesperson and bakery manager. Skilled in fostering strong colleague relationships and adept at creating a cohesive team environment.
+                              </p>
+                              </div>
+                          </div>
+                          </li>
+                      </ul>
+                      </section>
+                  </article>
+  
+                  <!-- resume -->
+  
+                  <article id="resume" class="resume page" data-page="resume">
+                      <header>
+                          <h2 class="h2 article-title">Resume</h2>
+                      </header>
+  
+                      <section class="timeline">
+                          <div class="title-wrapper">
+                              <div class="icons-box">
+                              <i class="fa-solid fa-book-open"></i>
+                              </div>
+  
+                              <div><h3 class="h3">Education</h3>
+                                  <p>June 2023</p>
+                              </div>
+                          </div>
+  
+                          <ol class="timeline-list">
+                              
+                              <li>
+                                  <div class="school">
+                                      <h4>Bachelor of Engineering (BEng) in Agricultural Engineering </h4>
+                                      <p>(cgpa 4.0).</p>
+                                  </div>
+                                  <span class="career-list">
+                                      <i class="fa-solid fa-check"></i>
+                                      <p>Olabisi Onabanjo University, Ibogun, Ogun State</p>
+                                  </span>
+                              </li>
+  
+                              <li>
+                                  <div>
+                                      <h4>Relevant Coursework</h4>
+                                  </div>
+                                  <span class="career-list">
+                                      <i class="fa-solid fa-check"></i>
+                                      <p>Introduction to Computer Programming (CPE205)</p>  
+                                  </span>
+  
+                              </li>
+                              <li>
+                                  <div>
+                                      <h4>Awards & Honors</h4>
+                                  </div>
+                                  <span class="career-list">
+                                      <i class="fa-solid fa-check"></i>
+                                      <p>Dangote Flour Mill Best Floor Award</p>  
+                                  </span>
+                              </li>
+                              <li>
+                                  <div>
+                                      <h4>Extracurricular Activities</h4>
+                                  </div>
+                                  <div>
+                                      <span class="career-list">
+                                          <i class="fa-solid fa-check"></i>
+                                          <p>Active Participant in Web3 Space and NFT Communities</p>
+                                            
+                                      </span>
+                                      <span class="career-list">
+                                          <i class="fa-solid fa-check"></i>
+                                          <p>Creating Visually appealing documents, banners, and cards using Canva.</p>
+                                      </span>
+                                  </div>
+                              </li>
+                              
+                          </ol>
+                      </section>
+  
+                        
+                      <section class="skill">
+                          <h3 class="h3 skills-title">My skills</h3>
+              
+                          <ul class="skills-list content-card">
+  
+                              <li class="skills-item">
+                                      <div class="title-wrapper">
+                                          <h5 class="h5">HTML</h5>
+                                          <data value="90">95%</data>
+                                      </div>
+                  
+                                      <div class="skill-progress-bg">
+                                          <div class="skill-progress-fill" style="width: 95%"></div>
+                                      </div>
+                              </li>
+
+                              <li class="skills-item">
+                                <div class="title-wrapper">
+                                    <h5 class="h5">CSS</h5>
+                                    <data value="90">85%</data>
+                                </div>
+            
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" style="width: 85%"></div>
+                                </div>
+                        </li>
+  
+                              <li class="skills-item">
+                                  <div class="title-wrapper">
+                                      <h5 class="h5">Java Script</h5>
+                                      <data value="75">75%</data>
+                                  </div>
+                  
+                                  <div class="skill-progress-bg">
+                                      <div class="skill-progress-fill" style="width: 75%"></div>
+                                  </div>
+                              </li>
+                  
+                              <li class="skills-item">
+                                  <div class="title-wrapper">
+                                          <h5 class="h5">React</h5>
+                                          <data value="65">65%</data>
+                                  </div>
+                  
+                                  <div class="skill-progress-bg">
+                                          <div class="skill-progress-fill" style="width: 70%"></div>
+                                  </div>
+                              </li>
+<!--   
+                                  <li class="skills-item">
+                                      <div class="title-wrapper">
+                                          <h5 class="h5">Node.js</h5>
+                                          <data value="0"></data>
+                                      </div>
+                  
+                                      <div class="skill-progress-bg">
+                                          <div class="skill-progress-fill" style="width: 0%"></div>
+                                      </div>
+                                  </li> -->
+  
+                              </ul>
+                          
+                      </section>
+                      </article>
+  
+                      <!-- portfolio -->
+  
+                      <article id="portfolio" class="portfolio page" data-page="portfolio">
+                          <header><h2 class="h2 article-title">Portfolio</h2></header>
+                  
+                          <section>
+                              <ul class="filter-list">
+                                      <li class="filter-item">
+                                      <button class="active" data-filter-btn>All</button>
+                                      </li>
+                          
+                                      <li class="filter-item">
+                                      <button data-filter-btn>Web design</button>
+                                      </li>
+                          
+                                      <li class="filter-item">
+                                      <button data-filter-btn>Applications</button>
+                                      </li>
+                          
+                                      <li class="filter-item">
+                                      <button data-filter-btn>Web development</button>
+                                      </li>
+                              </ul>
+  
+                          <div class="filter-select-box">
+                                  <button class="filter-select" data-select>
+                                      <div class="select-value" data-select-value>Select category</div>
+                          
+                                      <div class="select-icon">
+                                          <i class="fa-solid fa-chevron-down"></i>
+                                      </div>
+                                  </button>
+                      
+                                  <ul class="select-list">
+                                      <li class="select-item">
+                                          <button data-select-item>All</button>
+                                      </li>
+                          
+                                      <li class="select-item">
+                                          <button data-select-item>Web design</button>
+                                      </li>
+                          
+                                      <li class="select-item">
+                                          <button data-select-item>Applications</button>
+                                      </li>
+                          
+                                      <li class="select-item">
+                                          <button data-select-item>Web development</button>
+                                      </li>
+                                  </ul>
+                          </div>
+  
+                          <ul class="project-list">
+  
+                                  <li
+                                  class="project-item active"
+                                  data-filter-item
+                                  data-category="web development"
+                              >
+                                      <a href="https://teal-kashata-64f332.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                          <div class="project-item-icon-box">
+                                              <i class="fa-regular fa-eye"></i>
+                                          </div>
+                      
+                                          <img
+                                          src="/img/project blackJack game.jpg"
+                                          alt="web game"
+                                          loading="lazy"
+                                          />
+                                      </figure>
+                      
+                                      <h3 class="project-title">BlackJack Game</h3>
+                      
+                                      <p class="project-category">Web development</p>
+                                      
+                                      </a>
+                              </li>
+  
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="applications"
+                              >
+                                  <a href="https://glistening-granita-7486f8.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                          <div class="project-item-icon-box">
+                                              <i class="fa-regular fa-eye"></i>
+                                          </div>
+                          
+                                          <img
+                                              src="/img/Project To-do List.jpg"
+                                              alt="orizon"
+                                              loading="lazy"
+                                          />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Mobile App WIth Fire</h3>
+                      
+                                      <p class="project-category">To-do List</p>
+                                  </a>
+                              </li>
+  
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web development"
+                              >
+                                  <a href="https://fancy-sunflower-b4472a.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img src="/img/project bbsc.jpg" alt="Basketball board" loading="lazy" />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Basketball Score Board</h3>
+                      
+                                      <p class="project-category">Web development</p>
+                                  </a>
+                              </li>
+  
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web design"
+                              >
+                                  <a href="https://whimsical-speculoos-d9af12.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img
+                                          src="/img/project love life.jpg"
+                                          alt="brawlhalla"
+                                          loading="lazy"
+                                      />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Easy Life</h3>
+                      
+                                      <p class="project-category">Web Design</p>
+                                  </a>
+                              </li>
+  
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web design"
+                              >
+                                  <a href="https://github.com/mohawwal/Airbnb" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img
+                                          src="/img/project airbnb.jpg"
+                                          alt="brawlhalla"
+                                          loading="lazy"
+                                      />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Air-Bnb</h3>
+                      
+                                      <p class="project-category">Airbnb website (React)</p>
+                                  </a>
+                              </li>
+  
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web design"
+                              >
+                                  <a href="https://github.com/mohawwal/sideBar-Nav" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img src="/img/project sidebar.jpg" alt="dsm." loading="lazy" />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Desk top Sidebar</h3>
+                      
+                                      <p class="project-category">Web design</p>
+                                  </a>
+                      
+                              </li>
+  
+                              <li
+                                  class="project-item active"
+                                  data-filter-item
+                                  data-category="web design"
+                                  >
+                                  <a href="https://github.com/mohawwal/PORTFOLIO" target="_blank">
+                                      <figure class="project-img">
+                                          <div class="project-item-icon-box">
+                                              <i class="fa-regular fa-eye"></i>
+                                          </div>
+                          
+                                          <img
+                                              src="/img/project portfolio.jpg"
+                                              alt="portfolio"
+                                              loading="lazy"
+                                          />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Portfolio</h3>
+                      
+                                      <p class="project-category">Web design</p>
+                                  </a>
+                          </li>
+
+                          <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web development"
+                              >
+                                  <a href="https://animated-kringle-93e5f5.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img
+                                          src="/img/project weather.jpg"
+                                          alt="weather"
+                                          loading="lazy"
+                                      />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Weather App</h3>
+                      
+                                      <p class="project-category">Web development</p>
+                                  </a>
+                              </li>
+
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web development"
+                              >
+                                  <a href="https://cheery-heliotrope-a520f6.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img
+                                          src="/img/project quiz.jpg"
+                                          alt="quiz app"
+                                          loading="lazy"
+                                      />
+                                      </figure>
+                      
+                                      <h3 class="project-title">Quiz App with js</h3>
+                      
+                                      <p class="project-category">Web development</p>
+                                  </a>
+                              </li>
+
+                              <li
+                              class="project-item active"
+                              data-filter-item
+                              data-category="web development"
+                              >
+                                  <a href="https://benevolent-figolla-590a4a.netlify.app/" target="_blank">
+                                      <figure class="project-img">
+                                      <div class="project-item-icon-box">
+                                          <i class="fa-regular fa-eye"></i>
+                                      </div>
+                      
+                                      <img
+                                          src="/img/project todo.jpg"
+                                          alt="Todo app"
+                                          loading="lazy"
+                                      />
+                                      </figure>
+                      
+                                      <h3 class="project-title">TO-DO LIST (JS)</h3>
+                      
+                                      <p class="project-category">Web development</p>
+                                  </a>
+                              </li>
+  
+                          </ul>
+  
+                          <!-- contact -->
+              
+                          <article id="contact-page" class="contact page" data-page="contact">
+                              <header>
+                                  <h2 class="h2 article-title">Contact</h2>
+                              </header>
+                      
+                              <section class="mapbox">
+                                  <figure>
+                                      <iframe
+                                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.1514125414033!2d3.5277769!3d6.6281082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103befe9922ffded%3A0xcd78236428f04a00!2sDream%20Park%20and%20Gardens!5e0!3m2!1sen!2sng!4v1690567389213!5m2!1sen!2sng"
+                                      width="400"
+                                      height="300"
+                                      allowfullscreen=""
+                                      loading="lazy"
+                                      referrerpolicy="no-referrer-when-downgrade"
+                                      ></iframe>
+                                  </figure>
+                              </section>
+  
+                              <section>
+                                  <h3 class="h3 form-title">Contact Form</h3>
+  
+                                  <form action="#" class="form" data-form>
+  
+                                      <div class="input-wrapper">
+                                          <input
+                                          type="text"
+                                          name="fullname"
+                                          class="form-input"
+                                          placeholder="Full name"
+                                          required
+                                          data-form-input
+                                          />
+                          
+                                          <input
+                                          type="email"
+                                          name="email"
+                                          class="form-input"
+                                          placeholder="Email address"
+                                          required
+                                          data-form-input
+                                          />
+                                      </div>
+  
+                                      <textarea
+                                      name="message"
+                                      class="form-input"
+                                      placeholder="Your Message"
+                                      required
+                                      data-form-input
+                                      ></textarea>
+              
+                                      <button class="form-btn" type="submit" disabled data-form-btn>
+                                          <i class="fa-solid fa-paper-plane"></i>
+                                          <span>Send Message</span>
+                                      </button>
+  
+                                  </form>
+  
+                              </section>
+  
+                          </article>
+  
+                      </section>
+  
+              </div>
+          </div>
+      </main>
+      <script src="/script.js"></script>
+</body>
+</html>

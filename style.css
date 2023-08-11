@@ -202,7 +202,7 @@ article {
 .sidebar-info_more {
  position: fixed;
  background-color: var(--bg-color);
- height: 100vh;
+ height: 100%;
  width: 85%;
  top: 0px;
  left: 0px;
@@ -221,7 +221,7 @@ article {
 .mode-section {
   position: relative;
   left: 8%;
-  margin-top: 250px;
+  margin-top: 80px;
 }
 
 .mode-section .moon-mode .text {
@@ -256,12 +256,7 @@ article {
 }
 
 
-.sun-mode {
-  position: absolute;
-  display: none;
-  visibility: hidden;
-  transition: 1s 0.8s ease-in-out;
-}
+
 
 
 .moon-mode .mode .icon {

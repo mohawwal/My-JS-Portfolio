@@ -727,6 +727,13 @@ opacity: 0;
     transition: 0.15s ease-in-out;
 }
 
+.select-list.active {
+  visibility: visible;
+  pointer-events: visibleStroke;
+  z-index: 2;
+  opacity: 2;
+}
+
 .select-item button {
     background: var(--bg-dim-white);
     color: var(--text-black);
@@ -738,6 +745,12 @@ opacity: 0;
     border-radius: 8px;
   }
 
+  .select-item button:hover,
+  .select-item button:focus {
+    background: var(--buger);
+    color: var(--bg-dim-white);
+  }
+
   .project-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -745,6 +758,11 @@ opacity: 0;
     margin-bottom: 10px;
   }
 
+  .project-list.active {
+    margin-top: 170px;
+    opacity: 1;
+    transform: translateY(0);
+  }
   
 
   @keyframes scaleUp {

@@ -45,6 +45,20 @@ const body = document.querySelector("body")
 
 darkMode.addEventListener("click", () => {
     elementToggleFunc(body)
-
 })
+
+//portfolio
+const menuListBtn = document.querySelector(".filter-select")
+const menuList = document.querySelector(".select-list")
+const projList = document.querySelector(".project-list")
+let listDown = false
+
+menuListBtn.addEventListener("click", function() {
+    elementToggleFunc(menuList)
+    listDown = true
+    if (listDown === true) {
+        elementToggleFunc(projList)
+    }
+})
+
 

@@ -759,7 +759,7 @@ opacity: 0;
   }
 
   .project-list.active {
-    margin-top: 170px;
+    margin-top: 178px;
     opacity: 1;
     transform: translateY(0);
   }

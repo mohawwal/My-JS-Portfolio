@@ -6,6 +6,7 @@ const elementToggleFunc = function(elem) {
 }
 
 const hamburgerBtn = document.querySelector(".blog-hamburger")
+const navInfo = document.querySelector(".sidebar-info")
 const sideBar = document.querySelector(".sidebar-info_more")
 const article = document.querySelector(".section-articles")
 const sideBarCancelBtn = document.querySelector(".profile-cancel")

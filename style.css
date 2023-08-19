@@ -64,7 +64,7 @@ body.active {
  /* Colors for light mode */
  --text-white: rgb(255, 255, 255);
  --text-black: #fdfdfd;
- --text-light-blue: #414cdf;
+ --text-light-blue: #abafef;
  --text-grey: rgb(59, 59, 59);
  --text-grey-B: rgb(170, 167, 167);
  --text-grey-c: rgb(154, 154, 154);
@@ -170,7 +170,7 @@ article {
     border-radius: 0 0 10px 10px;
     visibility: visible;
     overflow: hidden;
-    z-index: 6;
+    z-index: 2;
     transition: var(--tran-04);
 }
 
@@ -204,10 +204,10 @@ article {
  position: fixed;
  background-color: var(--bg-color);
  height: 100%;
- width: 85%;
+ width: 70%;
  top: 0px;
  left: 0px;
-  z-index: 5;
+  z-index: 1;
   overflow: hidden;
   display: none;
 }
@@ -278,6 +278,7 @@ article {
   height: 14px;
   border: none;
   background-color: var(--bg-color);
+  cursor: pointer;
 }
 
 .hamburger-line {
@@ -287,32 +288,20 @@ article {
   transition: transform 0.3s ease;
 }
 
-/* Your existing CSS styles */
+/* for hamburger style */
 
 .blog-hamburger.active .line-a {
-transform: translateY(6px) rotate(45deg);
+  transform: rotate(45deg) translate(1px, 2px);
 }
 
 .blog-hamburger.active .line-b {
-transform: rotate(-45deg);
+  opacity: 0;
 }
 
 .blog-hamburger.active .line-c {
-opacity: 0;
+  transform: rotate(-45deg) translate(1px, -2px);
 }
 
-
-.hamburger-folder-list {
-  display: none;
-}
-
-.hamburger-folder-list.active {
-  display: block;
-}
-
-.hamburger-folder-list-b {
-  display: none;
-}
 
 /* nav section */
 .navbar-list {
@@ -321,11 +310,12 @@ opacity: 0;
   align-items: center;
   flex-direction: row;
   gap: 15px;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navbar-list .navbar-item .navbar-link {
   color: var(--text-black);
+  font-size: var(--fs-5);
 }
 
 .profile-display {
@@ -842,7 +832,7 @@ opacity: 0;
 }
 
 .project-category {
-  color: var(--light-gray-70);
+  color: var(--text-light-blue);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -996,6 +986,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-list {
+    font-size: var(--fs-4);
     gap: 30px;
     visibility: visible;
   }
@@ -1010,6 +1001,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar-info_more {
     width: 50%;
   }
+ 
 
 }
 
@@ -1028,6 +1020,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .user-icon {
     visibility: hidden;
+  }
+
+  .sidebar-info {
+    z-index: 5;  
   }
 
 

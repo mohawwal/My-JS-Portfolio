@@ -1035,10 +1035,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .mode-section {
     position: fixed;
-    background-color: #4e58e6;
     bottom: 0;
     left: 0;
     margin-bottom: 10%;    
+  }
+
+  .cancel-x {
+    display: none;
   }
 
 }

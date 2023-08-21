@@ -32,24 +32,44 @@ const navItems = document.querySelectorAll('.sidebar-info_more .navbar-link')
 
 navItems.forEach((item) => {
     item.addEventListener('click', e => {
-       
+      elementToggleFunc(sideBar)
+      elementToggleFunc(navInfo)
     })
 })
 
 
 
 
+
+
 //light and dark mode
-const lightMode = document.querySelector(".sun-mode");
-const darkMode = document.querySelector(".moon-mode")
+const modeSection = document.querySelector('.mode-section')
+const modeName = document.querySelector(".mode-text");
+const modeIcon = document.querySelector(".fa-moon")
 const body = document.querySelector("body")
+let isDarkMode= false
 
 
-darkMode.addEventListener("click", () => {
-    
-})
+const toggleMode = () => {
+    isDarkMode = !isDarkMode
+    if (isDarkMode) {
+        modeIcon.classList.add('.fa-moon');
+        modeIcon.classList.remove('.fa-sun');
+        modeName.textContent = "Dark Mode"
+        elementToggleFunc(body)
+    } else {
+        modeIcon.classList.add('.fa-sun')
+        modeIcon.classList.remove('.fa-moon')
+        modeName.textContent = "Light Mode"
+        elementToggleFunc(body)
+    }
+}
 
-
+modeSection.addEventListener('click', toggleMode)
+modeSection.addEventListener('click', () => {
+    elementToggleFunc(sideBar)
+    elementToggleFunc(navInfo)
+} )
 
 //portfolio
 const menuListBtn = document.querySelector(".filter-select");

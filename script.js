@@ -13,30 +13,31 @@ const sideBarCancelBtn = document.querySelector(".profile-cancel")
 let isSideBarOpen = false
 
 
+
 hamburgerBtn.addEventListener("click", () => {
     elementToggleFunc(sideBar)
+    elementToggleFunc(navInfo)
     isSideBarOpen = true;
 })
 
 sideBarCancelBtn.addEventListener("click", () => {
     elementToggleFunc(sideBar)
+    elementToggleFunc(navInfo)
     isSideBarOpen = false;
 })
 
-article.addEventListener("click", () => {
-    if (isSideBarOpen) {
-        elementToggleFunc(sideBar);
-        isSideBarOpen = false
-    }
+//nav disappear when an item is clicked
+
+const navItems = document.querySelectorAll('.sidebar-info_more .navbar-link')
+
+navItems.forEach((item) => {
+    item.addEventListener('click', e => {
+       
+    })
 })
 
 
-const user = document.querySelector(".user-icon")
 
-user.addEventListener("click", () => {
-    elementToggleFunc(sideBar)
-    isSideBarOpen = true;
-})
 
 //light and dark mode
 const lightMode = document.querySelector(".sun-mode");
@@ -45,21 +46,23 @@ const body = document.querySelector("body")
 
 
 darkMode.addEventListener("click", () => {
-    elementToggleFunc(body)
+    
 })
+
+
 
 //portfolio
-const menuListBtn = document.querySelector(".filter-select")
-const menuList = document.querySelector(".select-list")
-const projList = document.querySelector(".project-list")
-let listDown = false
+const menuListBtn = document.querySelector(".filter-select");
+const menuList = document.querySelector(".select-list");
+const menuListItems = document.querySelectorAll(".select-list .select-item");
+const projList = document.querySelector(".project-list");
+let listDown = false;
 
-menuListBtn.addEventListener("click", function() {
-    elementToggleFunc(menuList)
-    listDown = true
+
+menuListBtn.addEventListener("click", function () {
+    elementToggleFunc(menuList);
+    listDown = true;
     if (listDown === true) {
-        elementToggleFunc(projList)
+        elementToggleFunc(projList);
     }
-})
-
-
+});

@@ -8,7 +8,6 @@ const elementToggleFunc = function(elem) {
 const hamburgerBtn = document.querySelector(".blog-hamburger")
 const navInfo = document.querySelector(".sidebar-info")
 const sideBar = document.querySelector(".sidebar-info_more")
-const article = document.querySelector(".section-articles")
 const sideBarCancelBtn = document.querySelector(".profile-cancel")
 let isSideBarOpen = false
 
@@ -71,6 +70,8 @@ modeSection.addEventListener('click', () => {
     elementToggleFunc(navInfo)
 } )
 
+
+
 //portfolio
 const menuListBtn = document.querySelector(".filter-select");
 const menuList = document.querySelector(".select-list");
@@ -79,10 +80,27 @@ const projList = document.querySelector(".project-list");
 let listDown = false;
 
 
-menuListBtn.addEventListener("click", function () {
+const menu = () => {
     elementToggleFunc(menuList);
     listDown = true;
     if (listDown === true) {
         elementToggleFunc(projList);
+    } 
+}
+
+
+menuListBtn.addEventListener("click", menu);
+
+menuListItems.forEach((list) => {
+    list.addEventListener('click', () => {
+        menu()
+    })
+})
+
+const article = document.querySelector(".section-articles")
+//i want the list to go down wen i click on other part of the page
+article.addEventListener('click', () => {
+    if (listDown == true) {
+        
     }
-});
+})

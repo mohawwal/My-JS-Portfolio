@@ -58,7 +58,7 @@
 body.active {
    /* background color */
    --bg-color: rgb(31, 30, 30);
-   --bg-dim-white: rgb(203, 203, 203);
+   --bg-dim-white: rgb(97, 97, 97);
    --bg-small-white: rgb(245, 245, 245);
 
  /* Colors for light mode */
@@ -231,6 +231,11 @@ article {
 }
 .switch-icon {
   font-size: 25px;
+  color: var(--text-black);
+}
+
+.text {
+  color: var(--text-black);
 }
 
 .mode-section {
@@ -1026,7 +1031,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .switch-icon {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .mode-text.text {
@@ -1042,6 +1047,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .cancel-x {
     display: none;
+  }
+
+  .switch-icon {
+    color: var(--text-black);
+    border: 1px dashed var(--bg-dim-white);
+    padding: 10px;
+    background: var(--bg-small-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .switch-icon:hover,
+  .switch-icon:focus {
+    font-size: 30px;
+    transition: var(--transition-1);
   }
 
 }

@@ -1,22 +1,22 @@
 :root {
 
     /* background color */
-    --bg-color: white;
-    --bg-dim-white: rgb(203, 203, 203);
+    --bg-color: rgb(31, 30, 30);
+    --bg-dim-white: rgb(97, 97, 97);
     --bg-small-white: rgb(245, 245, 245);
 
   /* Colors for light mode */
-  --text-white: white;
-  --text-black: #1c1700;
-  --text-light-blue: #4e58e6;
+  --text-white: rgb(255, 255, 255);
+  --text-black: #fdfdfd;
+  --text-light-blue: #abafef;
   --text-grey: rgb(59, 59, 59);
-  --text-grey-B: rgb(59, 59, 59);
-  --text-grey-c: rgb(59, 59, 59);
-  --text-yellow: rgb(49, 49, 1);
-  --text-orange: rgb(33, 22, 1);
-  --text-pop: #4e58e6;
-  --box-shadow: -4px 8px 24px;
-  --buger: #2f2f2f;
+  --text-grey-B: rgb(170, 167, 167);
+  --text-grey-c: rgb(154, 154, 154);
+  --text-yellow: rgb(157, 157, 9);
+  --text-orange: rgb(242, 197, 106);
+  --text-pop: white;
+  --buger: rgb(255, 255, 255);
+  --box-shadow: -9px 6px 2px;
 
    /**
    * typography
@@ -57,22 +57,24 @@
 
 body.active {
    /* background color */
-   --bg-color: rgb(31, 30, 30);
-   --bg-dim-white: rgb(97, 97, 97);
+
+   --bg-color: white;
+   --bg-dim-white: rgb(203, 203, 203);
    --bg-small-white: rgb(245, 245, 245);
 
  /* Colors for light mode */
- --text-white: rgb(255, 255, 255);
- --text-black: #fdfdfd;
- --text-light-blue: #abafef;
+
+ --text-white: white;
+ --text-black: #1c1700;
+ --text-light-blue: #4e58e6;
  --text-grey: rgb(59, 59, 59);
- --text-grey-B: rgb(170, 167, 167);
- --text-grey-c: rgb(154, 154, 154);
- --text-yellow: rgb(157, 157, 9);
- --text-orange: rgb(242, 197, 106);
- --text-pop: white;
- --buger: rgb(255, 255, 255);
- --box-shadow: -9px 6px 2px;
+ --text-grey-B: rgb(59, 59, 59);
+ --text-grey-c: rgb(59, 59, 59);
+ --text-yellow: rgb(49, 49, 1);
+ --text-orange: rgb(33, 22, 1);
+ --text-pop: #4e58e6;
+ --box-shadow: -4px 8px 24px;
+ --buger: #2f2f2f;
 }
 
 img, i, a, button, time, span { display: block; }
@@ -171,6 +173,7 @@ article {
     z-index: 4;
     transition: var(--tran-04);
     display: block;
+    transition: left 0.3s ease;
 }
 
 .sidebar-info.active {
@@ -224,6 +227,7 @@ article {
   overflow: hidden;
   display: none;
   visibility: visible;
+  transition: left 0.3s ease;
 }
 
 .sidebar-info_more.active {
@@ -337,6 +341,7 @@ article {
 .navbar-list .navbar-item .navbar-link {
   color: var(--text-black);
   font-size: var(--fs-2);
+
 }
 
 .profile-display {
@@ -565,6 +570,25 @@ article {
  * #testimonials 
  */
 
+ .content-card {
+  max-height: 282px;
+ }
+
+ .content-card:hover, .content-card:focus {
+  max-height: 100%;
+  
+ }
+
+ .job-roles ul {
+  list-style: none;
+ }
+
+ .job-roles ul li {
+  
+}
+
+
+
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
@@ -597,8 +621,9 @@ article {
     font-weight: var(--fw-300);
     line-height: 1.6;
     display: -webkit-box;
-    line-clamp: 6;
-    -webkit-line-clamp: 6;
+    font-size: var(--fs-4);
+    /* line-clamp: 6;
+    -webkit-line-clamp: 6; */
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -610,6 +635,15 @@ article {
     box-shadow: var(--shadow-1);
   }
 
+  .testimonials-datas {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px 0;
+    color: var(--text-grey-B);
+  }
 
 
   /*-----------------------------------*\
@@ -1014,6 +1048,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: block;
     z-index: 4;
     max-height: 50px;
+    
   }
 
   .navbar-list {

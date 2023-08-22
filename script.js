@@ -52,13 +52,13 @@ let isDarkMode= false
 const toggleMode = () => {
     isDarkMode = !isDarkMode
     if (isDarkMode) {
-        modeIcon.classList.add('.fa-moon');
-        modeIcon.classList.remove('.fa-sun');
+        modeIcon.classList.add('fa-moon');
+        modeIcon.classList.remove('fa-sun');
         modeName.textContent = "Dark Mode"
         elementToggleFunc(body)
     } else {
-        modeIcon.classList.add('.fa-sun')
-        modeIcon.classList.remove('.fa-moon')
+        modeIcon.classList.add('fa-sun')
+        modeIcon.classList.remove('fa-moon')
         modeName.textContent = "Light Mode"
         elementToggleFunc(body)
     }
@@ -73,10 +73,12 @@ modeSection.addEventListener('click', () => {
 
 
 //portfolio
+const article = document.querySelector(".section-articles")
 const menuListBtn = document.querySelector(".filter-select");
 const menuList = document.querySelector(".select-list");
 const menuListItems = document.querySelectorAll(".select-list .select-item");
 const projList = document.querySelector(".project-list");
+const projectItem = document.querySelectorAll(".project-list .project-item")
 let listDown = false;
 
 
@@ -97,10 +99,8 @@ menuListItems.forEach((list) => {
     })
 })
 
-const article = document.querySelector(".section-articles")
-//i want the list to go down wen i click on other part of the page
-article.addEventListener('click', () => {
-    if (listDown == true) {
-        
-    }
-})
+
+
+
+
+

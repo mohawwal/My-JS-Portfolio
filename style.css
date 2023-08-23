@@ -570,9 +570,7 @@ article {
  * #testimonials 
  */
 
- .content-card {
-  
- }
+ 
 
  .content-card:hover, .content-card:focus {
   max-height: 100%;
@@ -604,7 +602,8 @@ article {
 
 .testimonials { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.testimonials-title { margin-bottom: 20px;
+  font-size: var(--fs-2); }
 
 .testimonials-list { 
     display: flex;
@@ -626,9 +625,18 @@ article {
   }
 
 .testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title a {
+  color: var(--text-grey-c);
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+}
 
+.testimonials-item-title a:hover, .testimonials-item-title a:focus{
+  font-size: var(--fs-2);
+  color: var(--text-light-blue);
+}
 .testimonials-text { 
-    
+    margin-left: -10px;
     color: var(--text-grey-B);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
@@ -656,6 +664,7 @@ article {
     font-size: 15px;
     margin: 10px 0;
     color: var(--text-grey-B);
+    margin-left: -10px;
   }
 
 

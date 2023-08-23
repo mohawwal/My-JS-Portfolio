@@ -571,7 +571,7 @@ article {
  */
 
  .content-card {
-  max-height: 282px;
+  
  }
 
  .content-card:hover, .content-card:focus {
@@ -579,12 +579,25 @@ article {
   
  }
 
+ .fa-circle-dot {
+  font-size: 10px;
+ }
+
+ .job-roles {
+  color: var(--text-grey-B);
+  font-size: var(--fs-5);
+ }
+
  .job-roles ul {
-  list-style: none;
+  list-style-type: circle;
  }
 
  .job-roles ul li {
-  
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 20px 0;
+  list-style-type: circle;
 }
 
 
@@ -1088,7 +1101,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     color: var(--text-black);
     border: 1px dashed var(--bg-dim-white);
     padding: 10px;
-    background: var(--bg-small-white);
+    background-color: rgba(208, 202, 202, 0.4);
     border-radius: 50%;
     width: 50px;
     height: 50px;

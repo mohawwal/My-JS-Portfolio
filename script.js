@@ -52,14 +52,14 @@ let isDarkMode= false
 const toggleMode = () => {
     isDarkMode = !isDarkMode
     if (isDarkMode) {
-        modeIcon.classList.add('fa-sun');
-        modeIcon.classList.remove('fa-moon');
-        modeName.textContent = "Light Mode"
+        modeIcon.classList.add('fa-moon');
+        modeIcon.classList.remove('fa-sun');
+        modeName.textContent = "Dark Mode"
         elementToggleFunc(body)
     } else {
-        modeIcon.classList.add('fa-moon')
-        modeIcon.classList.remove('fa-sun')
-        modeName.textContent = "Dark Mode"
+        modeIcon.classList.add('fa-sun')
+        modeIcon.classList.remove('fa-moon')
+        modeName.textContent = "Light Mode"
         elementToggleFunc(body)
     }
 }

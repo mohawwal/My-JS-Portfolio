@@ -44,7 +44,7 @@ navItems.forEach((item) => {
 //light and dark mode
 const modeSection = document.querySelector('.mode-section')
 const modeName = document.querySelector(".mode-text");
-const modeIcon = document.querySelector(".fa-moon")
+const modeIcon = document.querySelector(".fa-sun")
 const body = document.querySelector("body")
 let isDarkMode= false
 

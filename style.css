@@ -242,7 +242,9 @@ p {
   overflow: hidden;
   display: none;
   visibility: visible;
-  transition: left 0.3s ease;
+  transition: transform 0.9s ease;
+  transform-origin: bottom left;
+  
 }
 
 .sidebar-info_more.active {
@@ -317,10 +319,12 @@ p {
   background-color: var(--bg-color);
   cursor: pointer;
   transition: transform 0.3s ease;
+  transform-origin: bottom right;
 }
 
 .blog-hamburger:hover, .blog-hamburger:focus {
   transform: scale(1.1);
+  transform-origin: top left;
 }
 
 .hamburger-line {
@@ -328,6 +332,7 @@ p {
   height: 1.5px;
   background-color: var(--buger);
   transition: transform 0.3s ease;
+  transform-origin: top left;
 }
 
 /* for hamburger style */
@@ -369,6 +374,7 @@ p {
   font-size: 25px;
   margin-left: 15px;
   transition: var(--tran-05);
+  transform-origin: top left;
 }
 
 .hamburger:focus,
@@ -842,6 +848,8 @@ p {
   z-index: 2;
   opacity: 2;
   transform: scale(1);
+  transition: transform 0.4s ease;
+  transform-origin: bottom;
 }
 
 .select-item button {

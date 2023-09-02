@@ -883,6 +883,12 @@ p {
   }
 }
 
+
+.project-list li.hide {
+  display: none;
+}
+
+
 .project-item > a {
   width: 100%;
 }

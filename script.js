@@ -76,10 +76,7 @@ modeSection.addEventListener('click', () => {
 
 const article = document.querySelector(".section-articles");
 const menuListBtn = document.querySelector(".filter-select");
-const menuList = document.querySelector(".select-list");
-const projLists = document.querySelectorAll(".project-list");
 
-const buttons = document.querySelectorAll(".select-item");
 
 function showMenu(elem) {
     elem.parentElement.classList.add("show");
@@ -90,3 +87,23 @@ function showMenu(elem) {
     });
 }
 
+
+
+const menuList = document.querySelectorAll(".select-list li .select-item");
+const projLists = document.querySelectorAll(".project-list li");
+
+
+const projects = (e) => {
+    document.querySelector(".select-list li .active").classList.remove("active");
+    e.target.classList.add("active");
+
+    projLists.forEach(proj => {
+        // show the proj if it matches the clicked filter or show all proj if "all" filter is clicked
+        if(proj.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+            return proj.classList.replace("hide", "show");
+        }
+        proj.classList.add("hide");
+    });
+}
+
+menuList.forEach(button => button.addEventListener("click", projects));

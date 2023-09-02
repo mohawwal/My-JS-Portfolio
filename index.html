@@ -537,8 +537,8 @@
                           <header><h2 class="h2 article-title">Portfolio</h2></header>
   
                             <div class="filter-select-box">
-                                  <button class="filter-select" data-select onclick="showMenu(this)">
-                                      <div class="select-value" data-select-value>Select category</div>
+                                  <button class="filter-select" onclick="showMenu(this)">
+                                      <div class="select-value">Select category</div>
                           
                                       <div class="select-icon">
                                           <i class="fa-solid fa-chevron-down"></i>
@@ -546,20 +546,20 @@
                                   </button>
                       
                                   <ul class="select-list">
-                                      <li data-target="All" class="select-item">
-                                          <button data-select-item>All</button>
+                                      <li class="select-item active">
+                                          <button data-filter="all" class="select-item active">All</button>
                                       </li>
                           
-                                      <li data-target="WebDesign" class="select-item">
-                                          <button data-select-item>WebDesign</button>
+                                      <li class="select-item">
+                                          <button data-filter="WebDesign" class="select-item">Web Design</button>
                                       </li>
                           
-                                      <li data-target="Applications" class="select-item">
-                                          <button data-select-item>Applications</button>
+                                      <li class="select-item">
+                                          <button data-filter="Applications" class="select-item">Applications</button>
                                       </li>
                           
-                                      <li data-target="WebDevelopment" class="select-item">
-                                          <button data-select-item>WebDevelopment</button>
+                                      <li class="select-item">
+                                          <button data-filter="WebDevelopment" class="select-item">Web Development</button>
                                       </li>
                                   </ul>
                             </div>
@@ -567,7 +567,7 @@
                           <ul class="project-list All">
 
                             <li
-                            class="project-item active webDesign"
+                            class="project-item" data-name="WebDesign"
                             >
                                 <a href="https://sparkly-fairy-0c36a7.netlify.app/" target="_blank">
                                 <figure class="project-img">
@@ -590,7 +590,7 @@
                             </li>
   
                             <li
-                                  class="project-item active webDevelopment"
+                                  class="project-item" data-name="WebDevelopment"
                               >
                                       <a href="https://teal-kashata-64f332.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -613,7 +613,7 @@
                               </li>
   
                               <li
-                              class="project-item active Applications"
+                              class="project-item" data-name="Applications"
                               >
                                   <a href="https://glistening-granita-7486f8.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -635,7 +635,7 @@
                               </li>
   
                               <li
-                              class="project-item active webDevelopment"
+                              class="project-item" data-name="WebDevelopment"
                               >
                                   <a href="https://fancy-sunflower-b4472a.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -653,7 +653,7 @@
                               </li>
   
                               <li
-                              class="project-item active webDesign"
+                              class="project-item" data-name="WebDesign"
                               >
                                   <a href="https://whimsical-speculoos-d9af12.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -675,7 +675,7 @@
                               </li>
   
                               <li
-                              class="project-item active webDesign"
+                              class="project-item" data-name="WebDesign"
                               >
                                   <a href="https://github.com/mohawwal/Airbnb" target="_blank">
                                       <figure class="project-img">
@@ -697,7 +697,7 @@
                               </li>
   
                               <li
-                              class="project-item active webDesign"
+                              class="project-item" data-name="WebDesign"
                               >
                                   <a href="https://github.com/mohawwal/sideBar-Nav" target="_blank">
                                       <figure class="project-img">
@@ -716,7 +716,7 @@
                               </li>
   
                               <li
-                                  class="project-item active webDesign"
+                                  class="project-item" data-name="WebDesign"
                                   >
                                   <a href="https://github.com/mohawwal/PORTFOLIO" target="_blank">
                                       <figure class="project-img">
@@ -738,7 +738,7 @@
                           </li>
 
                           <li
-                              class="project-item active Applications"
+                              class="project-item" data-name="Applications"
                               >
                                   <a href="https://animated-kringle-93e5f5.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -760,7 +760,7 @@
                               </li>
 
                               <li
-                              class="project-item active webDevelopment"
+                              class="project-item" data-name="WebDevelopment"
                               >
                                   <a href="https://cheery-heliotrope-a520f6.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -782,7 +782,7 @@
                               </li>
 
                               <li
-                              class="project-item active webDevelopment"
+                              class="project-item" data-name="Applications"
                               >
                                   <a href="https://benevolent-figolla-590a4a.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -804,7 +804,7 @@
                               </li>
 
                               <li
-                              class="project-item active Applications"
+                              class="project-item" data-name="Applications"
                               >
                                   <a href="https://jade-bienenstitch-53b3b0.netlify.app/" target="_blank">
                                       <figure class="project-img">
@@ -896,6 +896,6 @@
               </div>
           </div>
       </main>
-      <script src="/script.js"></script>
+      <script src="/script.js" defer></script>
 </body>
 </html>

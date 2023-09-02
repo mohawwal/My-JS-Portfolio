@@ -826,22 +826,22 @@ p {
 .select-list {
   background: var(--eerie-black-2);
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 5px);
   width: 100%;
   padding: 6px;
   border-radius: 14px;
   z-index: 2;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
+  transform: scale(0);
   transition: 0.15s ease-in-out;
 }
 
-.select-list.active {
+.filter-select-box.show .select-list {
   visibility: visible;
   pointer-events: visibleStroke;
   z-index: 2;
   opacity: 2;
+  transform: scale(1);
 }
 
 .select-item button {

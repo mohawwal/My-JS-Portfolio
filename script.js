@@ -73,34 +73,20 @@ modeSection.addEventListener('click', () => {
 
 
 //portfolio
-const article = document.querySelector(".section-articles")
+
+const article = document.querySelector(".section-articles");
 const menuListBtn = document.querySelector(".filter-select");
 const menuList = document.querySelector(".select-list");
-const menuListItems = document.querySelectorAll(".select-list .select-item");
-const projList = document.querySelector(".project-list");
-const projectItem = document.querySelectorAll(".project-list .project-item")
-let listDown = false;
+const projLists = document.querySelectorAll(".project-list");
 
+const buttons = document.querySelectorAll(".select-item");
 
-const menu = () => {
-    elementToggleFunc(menuList);
-    listDown = true;
-    if (listDown === true) {
-        elementToggleFunc(projList);
-    } 
+function showMenu(elem) {
+    elem.parentElement.classList.add("show");
+    document.addEventListener('click', e => {
+        if (e.target.tagName !== "BUTTON" || e.target !== elem) {
+            elem.parentElement.classList.remove("show");
+        }
+    });
 }
-
-
-menuListBtn.addEventListener("click", menu);
-
-menuListItems.forEach((list) => {
-    list.addEventListener('click', () => {
-        menu()
-    })
-})
-
-
-
-
-
 

@@ -9,20 +9,18 @@ const hamburgerBtn = document.querySelector(".blog-hamburger")
 const navInfo = document.querySelector(".sidebar-info")
 const sideBar = document.querySelector(".sidebar-info_more")
 const sideBarCancelBtn = document.querySelector(".profile-cancel")
-let isSideBarOpen = false
+
 
 
 
 hamburgerBtn.addEventListener("click", () => {
     elementToggleFunc(sideBar)
     elementToggleFunc(navInfo)
-    isSideBarOpen = true;
 })
 
 sideBarCancelBtn.addEventListener("click", () => {
     elementToggleFunc(sideBar)
     elementToggleFunc(navInfo)
-    isSideBarOpen = false;
 })
 
 //nav disappear when an item is clicked
@@ -94,9 +92,6 @@ const projLists = document.querySelectorAll(".project-list li");
 
 
 const projects = (e) => {
-    document.querySelector(".select-list li .active").classList.remove("active");
-    e.target.classList.add("active");
-
     projLists.forEach(proj => {
         // show the proj if it matches the clicked filter or show all proj if "all" filter is clicked
         if(proj.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {

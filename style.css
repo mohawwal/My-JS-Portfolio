@@ -162,6 +162,11 @@ body {
 
 /* buttom nav */
 
+.profil-pic img{
+  width: 100px;
+  height: 140px;
+}
+
 article {
   margin-top: 50px;
 }
@@ -1144,6 +1149,14 @@ textarea.form-input::-webkit-resizer {
 
   .blog-hamburger {
     visibility: visible;
+  }
+  .select-list {
+    right: 0;
+    width: 60%;
+
+  }
+  .filter-select-box {
+    display: flex;
   }
 }
 

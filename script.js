@@ -11,8 +11,6 @@ const sideBar = document.querySelector(".sidebar-info_more")
 const sideBarCancelBtn = document.querySelector(".profile-cancel")
 
 
-
-
 hamburgerBtn.addEventListener("click", () => {
     elementToggleFunc(sideBar)
     elementToggleFunc(navInfo)
@@ -33,9 +31,6 @@ navItems.forEach((item) => {
       elementToggleFunc(navInfo)
     })
 })
-
-
-
 
 
 
